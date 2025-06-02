@@ -1,2 +1,3 @@
 # admin_track
-Event Attendance Monitoring using existing ESSU ID Barcode and Fine Calculating Mobile Application
+This is an Offline Event Attendance Monitoring Application using existing ESSU ID Barcode with Fine Calculation Capabilities.
+Only for academic purposes only.
