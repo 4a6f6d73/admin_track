@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.admin_event">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="-30dp"
+        android:gravity="center"
+        android:background="@drawable/for_cardbg2"
+        android:elevation="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="148dp"
+            android:layout_height="50dp">
+
+            <ImageButton android:id="@+id/importData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/for_passive_btn"
+                android:paddingLeft="9dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/en_create_icon"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Import Data"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="44dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageButton android:id="@+id/checkData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/for_passive_btn"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/en_create_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Data"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="46dp"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="305dp"
+            android:layout_height="50dp">
+
+            <ImageButton android:id="@+id/archiveDel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/for_warn_mode"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/en_archive_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Archive Data and End Session"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="60dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

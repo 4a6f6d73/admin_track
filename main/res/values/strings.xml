@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">alias_sekyu</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="welcome_greeting">Welcome Greeting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity">Activity</string>
+    <string name="user">User</string>
+    <string name="records">Records</string>
+</resources>

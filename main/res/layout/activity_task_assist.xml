@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".TaskAssist">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <!-- Event Title Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Title"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eventTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:paddingStart="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Event Venue Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/event_venue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="Event Venue"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eventVenueInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:paddingStart="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Horizontal Layout for Date and Time Inputs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Date Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Select Date">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dateInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:focusable="false"
+                android:padding="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Time Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Select Time">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/timeInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:focusable="false"
+                android:padding="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Horizontal Layout for Cancel and Proceed Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Decline"
+            android:drawableLeft="@drawable/en_cancel_icon"
+            android:background="@drawable/en_btn_shape"
+            tools:ignore="HardcodedText"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <!-- Proceed Button -->
+        <Button
+            android:id="@+id/nxtstep"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/en_next_icon"
+            android:background="@drawable/en_btn_shape"
+            android:text="Proceed"
+            tools:ignore="HardcodedText"
+            android:focusable="true"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

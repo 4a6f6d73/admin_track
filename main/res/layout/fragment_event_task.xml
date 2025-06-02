@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.event_task">
+
+    <!-- Header Container -->
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/for_cardbg2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+
+        <Button
+            android:id="@+id/createEvent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="50dp"
+            android:text="New Event"
+            android:drawableLeft="@drawable/en_create_icon"
+            android:background="@drawable/en_btn_shape"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/scanBarCode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Scan Now"
+            android:drawableLeft="@drawable/en_scan_icon"
+            android:background="@drawable/en_btn_shape"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <!-- Body Container -->
+    <LinearLayout
+        android:id="@+id/bodyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/scheduledEventsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Scheduled Events"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

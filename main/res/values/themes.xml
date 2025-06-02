@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Alias_sekyu" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary"> @color/green4 </item>
+        <item name="colorSecondary"> @color/green1 </item>
+        <item name="colorOnPrimary"> @color/white </item>
+    </style>
+
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Alias_sekyu" parent="Base.Theme.Alias_sekyu">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_right</item>
+    </style>
+
+</resources>

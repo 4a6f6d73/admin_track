@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".PreScanSel">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/scheduledEventsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose an Event"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/idEvLoc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!-- Cancel Button Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/decline"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="Decline"
+                android:drawableLeft="@drawable/en_cancel_icon"
+                android:background="@drawable/en_btn_shape"
+                tools:ignore="HardcodedText"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- Proceed Button -->
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/en_next_icon"
+                android:background="@drawable/en_btn_shape"
+                android:text="Proceed"
+                tools:ignore="HardcodedText"
+                android:focusable="true"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

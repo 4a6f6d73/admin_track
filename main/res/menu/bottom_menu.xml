@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_activity"
+        android:icon="@drawable/en_activity_icon"
+        android:title="@string/activity"/>
+
+    <item
+        android:id="@+id/nav_records"
+        android:icon="@drawable/en_sum_icon"
+        android:title="@string/records"/>
+
+    <item
+        android:id="@+id/nav_user"
+        android:icon="@drawable/en_user_icon"
+        android:title="@string/user"/>
+</menu>
